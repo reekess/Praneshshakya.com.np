@@ -1,209 +1,313 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Pranesh Shakya – Official Music, Videos & Tour</title>
+
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Official site of Pranesh Shakya. Discography, videos, tour dates, and contact." />
+  <meta name="description" content="Official site of Pranesh Shakya. Music, videos, kids songs, and updates." />
+
   <link rel="icon" href="assets/img/praneshcreation.png" type="image/png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <link rel="stylesheet" href="assets/css/style.css">
+
   <style>
     body {
       font-family: 'Segoe UI', Arial, sans-serif;
-      background: #131313; color: #eee; margin: 0;
-      min-height: 100vh;
+      background: #131313;
+      color: #eee;
+      margin: 0;
     }
+
+    /* HEADER */
     header {
       background: #403b3b;
-      display: flex; align-items: center; justify-content: space-between;
-      padding: 1rem 5vw 1rem 2vw;
-      position: sticky; top: 0; z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 5vw;
+      position: sticky;
+      top: 0;
+      z-index: 100;
       box-shadow: 0 3px 24px #0009;
     }
+
     .logo-image img {
-      height:58px; /* bigger for branding */
-      transition: transform .24s;
+      height: 58px;
+      transition: transform 0.24s;
     }
-    .logo-image a:hover img { transform: scale(1.07); }
+
+    .logo-image a:hover img {
+      transform: scale(1.07);
+    }
+
     .menu-section a {
-      color: #ffeea0; text-decoration: none; margin: 0 1.4rem;
-      font-weight: 600; transition: color .2s;
+      color: #ffeea0;
+      margin: 0 1.4rem;
+      text-decoration: none;
+      font-weight: 600;
       letter-spacing: 0.06em;
+      transition: 0.2s;
     }
-    .menu-section a:hover { color: #60afff; }
-    .header-items { display: flex; align-items: center; }
-    .right-items { display: flex; }
-    .mobile-menu { display: none; }
-    @media (max-width:800px) {
-      .right-items.desktop-only{display:none;}
-      .mobile-menu {display:block;}
-      header {padding: 1rem 3vw;}
+
+    .menu-section a:hover {
+      color: #60afff;
     }
-    /* Hero Banner */
+
+    @media (max-width: 800px) {
+      .menu-section {
+        display: none;
+      }
+    }
+
+    /* HERO */
     #hero-banner {
       background: linear-gradient(120deg, #222 65%, #3753ac 130%);
-      display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
-      padding: 4rem 2vw 3rem;
-      box-shadow: 0 6px 48px #001a;
+      padding: 4rem 2vw;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
     }
+
     .hero-left img {
       width: 260px;
       border-radius: 22px;
-      box-shadow: 0 2px 28px #0007;
       margin-right: 48px;
+      box-shadow: 0 2px 28px #0007;
     }
+
     .hero-right {
       max-width: 480px;
       padding: 1.5rem;
-      display: flex; flex-direction: column; align-items: flex-start;
     }
+
     .hero-title {
-      font-size: 2.8rem; font-weight: 800; margin-bottom: 0.4em; color: #ffdd70;
-      text-shadow: 2px 2px 0 #222a;
-      letter-spacing: .08em;
+      font-size: 2.8rem;
+      font-weight: 800;
+      color: #ffdd70;
+      margin-bottom: 0.4em;
     }
+
     .hero-release {
-      font-size: 1.15em; font-weight: 500; margin-bottom: 23px; color: #d6e2ff;
+      font-size: 1.15em;
+      color: #d6e2ff;
+      margin-bottom: 23px;
     }
-    .hero-btns .button {
-      background: #60afff; color: #181818; font-weight:700; border-radius: 7px;
-      margin: 0 0.5em 0.7em 0; padding: 0.82em 2em; font-size: 1.12rem;
-      box-shadow: 0 2px 10px #09589c33;
-      display:inline-block; text-decoration:none; transition:.2s;
+
+    .button {
+      background: #60afff;
+      color: #181818;
+      padding: 0.82em 2em;
+      border-radius: 7px;
+      font-weight: 700;
+      text-decoration: none;
+      display: inline-block;
+      transition: .2s;
     }
-    .hero-btns .button:hover { background:#ffdd70; color:#181818; }
+
+    .button:hover {
+      background: #ffdd70;
+    }
+
     .hero-socials {
-      margin-top:16px; display:flex;gap:19px;
+      margin-top: 16px;
+      display: flex;
+      gap: 19px;
     }
+
     .hero-socials a {
-      font-size:2rem;color: #ffeea0; text-shadow: 0 2px 18px #003a;
-      transition: color .19s, transform .14s;
+      font-size: 2rem;
+      color: #ffeea0;
+      transition: 0.19s;
     }
-    .hero-socials a:hover { color: #60afff; transform: scale(1.13);}
-    /* Section Styling */
-    section.section {
-      margin: 60px auto 0; max-width: 980px; background: #1b2440ea;
-      padding: 2.2em 3vw 2.8em; border-radius: 20px;
+
+    .hero-socials a:hover {
+      color: #60afff;
+      transform: scale(1.13);
+    }
+
+    /* SECTION */
+    .section {
+      background: #1b2440ea;
+      border-radius: 20px;
+      padding: 2.2em 3vw;
+      margin: 60px auto 0;
+      max-width: 980px;
       box-shadow: 0 6px 34px #2228;
     }
+
     .anchor {
-      font-size:2rem; font-weight:600; letter-spacing:.09em; margin-bottom:10px;
-      text-align:center; color:#ffeea0;
+      text-align: center;
+      color: #ffeea0;
+      font-size: 2rem;
+      margin-bottom: 10px;
     }
-    .horizontal { border:0; height:2px; width:60%; background:#60afff48; margin:12px auto 24px;}
-    /* About Section */
-    .bio-wrapper {
-      margin-bottom: 1em; padding-bottom: 18px;
-      border-bottom: 1.5px solid #60afff38;
+
+    .horizontal {
+      width: 60%;
+      height: 2px;
+      background: #60afff48;
+      border: 0;
+      margin: 12px auto 24px;
+    }
+
+    /* ABOUT */
+    .bio-text {
+      font-size: 1.23em;
+      text-align: center;
+      max-width: 660px;
+      margin: 0 auto;
+      color: #e3ecff;
+    }
+
+    /* PLAYLIST */
+    .playlist-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 34px;
+    }
+
+    .playlist-card {
+      background: #232b50ee;
+      border-radius: 15px;
+      padding: 1.3em;
+      box-shadow: 0 2px 32px #1118;
       text-align: center;
     }
-    .bio-text {
-      font-size:1.23em; color:#e3ecff; max-width: 660px; margin:0 auto;
-      opacity:0.95;
+
+    .youtube-player {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
     }
-    /* Playlist Card Styles */
-    .playlist-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(320px,1fr)); gap:34px;}
-    .playlist-card {
-      background:#232b50ee; border-radius:15px; box-shadow:0 2px 32px #1118;
-      display:flex; flex-direction:column; align-items:center; padding:1.3em;
+
+    .youtube-player img {
+      width: 100%;
     }
-    .playlist-card h4 { font-size:1.22rem; margin-bottom:1em; font-weight:600; color:#ffd457;}
-    .youtube-player { aspect-ratio:16/9; width:100%; border-radius:10px; overflow:hidden; position:relative; margin-bottom:1em; }
-    /* Contact/Newsletter */
+
+    .play {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 3rem;
+      color: white;
+      opacity: 0.8;
+    }
+
+    /* CONTACT */
     .newsletter_wrapper {
-      text-align:center; padding:1.2em;
+      text-align: center;
+      padding: 1.2em;
     }
-    .newsletter_wrapper h2 { font-size:1.5em; margin-bottom:24px; color:#ffeea0;}
-    .newsletter_wrapper form { display:flex; justify-content:center; gap:.5em; margin-bottom:0.5em;}
-    .newsletter_wrapper input[type=text] {
-      border-radius:6px; border:0; padding:0.8em 1em; width:220px;
-      font-size:1rem; outline:none; font-weight:500;
+
+    .newsletter_wrapper input {
+      padding: 0.8em 1em;
+      width: 220px;
+      border-radius: 6px;
+      border: none;
     }
+
     .newsletter_wrapper button {
-      border-radius:6px; border:none; background:#60afff; padding:0.85em 2em;
-      color:#222; font-weight:600; cursor:pointer; font-size:1rem; transition:.2s;
+      background: #60afff;
+      padding: 0.85em 2em;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      font-weight: 600;
     }
-    .newsletter_wrapper button:hover { background:#ffd457;}
-    .newsletter_wrapper .form-message { margin-top:1em; font-size:1.04em; color:#ffd457; }
-    /* Footer */
+
+    /* FOOTER */
     .footer {
-      text-align:center; padding:2em 0;
-      color:#b2b5b9; font-size:.97em;
-      background:#161616e6; margin-top:2em;
-      border-top:2px solid #60afff28;
+      text-align: center;
+      padding: 2em 0;
+      margin-top: 2em;
+      background: #161616e6;
+      color: #ccc;
     }
-    .footer-socials {margin:0.7em 0;}
-    .footer-socials a { color:#ffeea0; font-size:1.6em; padding:0 8px; }
-    .footer-socials a:hover { color:#60afff; }
-    /* Responsive */
-    @media (max-width:480px) {
-      #hero-banner { flex-direction:column; text-align:center;}
-      .hero-left img { margin-bottom:18px; margin-right:0;}
-      .hero-right { align-items:center; }
+
+    .footer-socials a {
+      font-size: 1.6rem;
+      color: #ffeea0;
+      margin: 0 8px;
+    }
+
+    .footer-socials a:hover {
+      color: #60afff;
     }
   </style>
 </head>
+
 <body>
+
   <!-- HEADER -->
   <header>
-    <div class="logo-image"><a href="#home"><img src="./assets/img/praneshcreation.png" alt="Pranesh Logo"></a></div>
+    <div class="logo-image">
+      <a href="#home">
+        <img src="assets/img/praneshcreation.png" alt="Logo" />
+      </a>
+    </div>
+
     <nav class="menu-section">
-      <div class="header-items">
-        <div class="right-items desktop-only">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#official">Official Songs</a>
-          <a href="#music">Kids Songs</a>
-          <a href="#videos">Lyrical Videos</a>
-          <a href="#subscribe">Contact</a>
-        </div>
-      </div>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#official">Official Songs</a>
+      <a href="#music">Kids Songs</a>
+      <a href="#videos">Lyrical Videos</a>
+      <a href="#subscribe">Contact</a>
     </nav>
   </header>
 
-  <!-- HERO BANNER -->
+  <!-- HERO -->
   <section id="hero-banner">
     <div class="hero-left">
-      <img src="./assets/img/Pranesh (1).png" alt="Pranesh Shakya - Artist portrait">
+      <img src="assets/img/Pranesh (1).png" alt="Pranesh Portrait">
     </div>
+
     <div class="hero-right">
       <div class="hero-title">Pranesh Shakya</div>
       <div class="hero-release">New Single Out Now: <strong>Nugaye Duney</strong></div>
-      <div class="hero-btns">
-        <a href="https://www.youtube.com/watch?v=oZjkX9_gji0" target="_blank" class="button">Watch on YouTube</a>
-      </div>
-      <div style="margin-top: 10px;">Follow on:</div>
+
+      <a href="https://www.youtube.com/watch?v=oZjkX9_gji0" target="_blank" class="button">
+        Watch on YouTube
+      </a>
+
+      <div style="margin-top:10px;">Follow on:</div>
       <div class="hero-socials">
-        <a href="https://www.instagram.com/pranesh4shakya/" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.youtube.com/@PraneshShakya" title="YouTube" target="_blank"><i class="fab fa-youtube"></i></a>
-        <a href="https://www.tiktok.com/@pranesh_shakya" title="TikTok" target="_blank"><i class="fab fa-tiktok"></i></a>
-        <a href="https://twitter.com/" title="Twitter" target="_blank"><i class="fab fa-x-twitter"></i></a>
-        <a href="https://www.facebook.com/praneshakya/" title="Facebook" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/pranesh4shakya/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/@PraneshShakya" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.tiktok.com/@pranesh_shakya" target="_blank"><i class="fab fa-tiktok"></i></a>
+        <a href="https://twitter.com/" target="_blank"><i class="fab fa-x-twitter"></i></a>
+        <a href="https://www.facebook.com/praneshakya/" target="_blank"><i class="fab fa-facebook"></i></a>
       </div>
     </div>
   </section>
 
-  <!-- ABOUT / BIO -->
+  <!-- ABOUT -->
   <section class="section" id="about">
-    <div class="bio-wrapper">
-      <h3 class="anchor">About</h3>
-      <div class="bio-text">
-        Pranesh Shakya is a Nepali singer-songwriter known for soulful vocals and creative kids music. His new single "Nugaye Duney" blends contemporary and traditional sounds, reflecting his passion for music and storytelling.
-      </div>
-    </div>
+    <h3 class="anchor">About</h3>
+    <hr class="horizontal" />
+    <p class="bio-text">
+      Pranesh Shakya is a Nepali singer-songwriter known for soulful vocals and creative kids music. His new single "Nugaye Duney"
+      blends contemporary and traditional sounds.
+    </p>
   </section>
 
   <!-- OFFICIAL SONGS -->
   <section class="section" id="official">
     <h3 class="anchor">Official Songs</h3>
     <hr class="horizontal" />
+
     <div class="playlist-grid">
       <div class="playlist-card">
         <h4>Nugaya Duney</h4>
         <div class="youtube-player" data-id="oZjkX9_gji0"></div>
       </div>
+
       <div class="playlist-card">
         <h4>Sim Sim Pani</h4>
         <div class="youtube-player" data-id="I0zaCuzrFYQ"></div>
@@ -211,15 +315,17 @@
     </div>
   </section>
 
-  <!-- KIDS SONGS -->
+  <!-- KIDS -->
   <section class="section" id="music">
     <h3 class="anchor">Kids Songs</h3>
     <hr class="horizontal" />
+
     <div class="playlist-grid">
       <div class="playlist-card">
         <h4>Dashain Ayo - Lyrics & Vocal</h4>
         <div class="youtube-player" data-id="z-ZnQaB0oyY"></div>
       </div>
+
       <div class="playlist-card">
         <h4>Pangra</h4>
         <div class="youtube-player" data-id="OyEogNH88Oo"></div>
@@ -227,15 +333,17 @@
     </div>
   </section>
 
-  <!-- LYRICAL VIDEOS -->
+  <!-- LYRICAL -->
   <section class="section" id="videos">
     <h3 class="anchor">Lyrical Videos</h3>
     <hr class="horizontal" />
+
     <div class="playlist-grid">
       <div class="playlist-card">
         <h4>Rajai</h4>
         <div class="youtube-player" data-id="g_V2Mf5pEus"></div>
       </div>
+
       <div class="playlist-card">
         <h4>Sim Sim Pani</h4>
         <div class="youtube-player" data-id="jAcSQYijeJ8"></div>
@@ -243,17 +351,20 @@
     </div>
   </section>
 
-  <!-- CONTACT/NEWSLETTER -->
+  <!-- CONTACT -->
   <section class="section" id="subscribe">
     <div class="newsletter_wrapper">
       <h2>Get Updates & Contact</h2>
+
       <form id="contactForm">
         <input type="text" name="email" placeholder="Enter your email" required>
         <button type="submit">Subscribe</button>
       </form>
-      <div id="form-message" class="form-message"></div>
-      <div style="margin-top:1em; color:#c6d8ff; font-size:.98em;">
-        Email: <a href="mailto:@gmail.com" style="color:#60afff;">acdkcha@gmail.com</a>
+
+      <div id="form-message" style="margin-top:1em;color:#ffd457;"></div>
+
+      <div style="margin-top:1em;color:#c6d8ff;">
+        Email: <a href="mailto:acdkcha@gmail.com" style="color:#60afff;">acdkcha@gmail.com</a>
       </div>
     </div>
   </section>
@@ -261,65 +372,59 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-socials">
-      <a href="https://www.instagram.com/pranesh4shakya/" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.youtube.com/@PraneshShakya" title="YouTube" target="_blank"><i class="fab fa-youtube"></i></a>
-      <a href="https://twitter.com/" title="Twitter" target="_blank"><i class="fab fa-x-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="#"><i class="fab fa-x-twitter"></i></a>
     </div>
+
     <div>
-      © 2025 Pranesh Shakya &ndash; Built with ❤️&nbsp;|&nbsp;<a href="#" style="color:#60afff;">Privacy Policy</a>
+      © 2025 Pranesh Shakya — Built with ❤️
     </div>
   </footer>
 
-  <!-- SCRIPTS (keep your existing YouTube/player code for embeds, newsletter/scroll) -->
+  <!-- SCRIPTS -->
   <script>
-    // ---- YouTube Embed ----
-    document.querySelectorAll('.youtube-player').forEach(div => {
+    // YouTube lazy loader
+    document.querySelectorAll(".youtube-player").forEach(div => {
       const vid = div.dataset.id;
       const thumb = `https://img.youtube.com/vi/${vid}/hqdefault.jpg`;
-      let playBtn = document.createElement('div');
-      playBtn.className = "play";
-      playBtn.innerHTML = '<i class="fas fa-play"></i>';
-      div.innerHTML = `<img src="${thumb}" alt="Video thumbnail">${playBtn.outerHTML}`;
-      div.addEventListener('click', function () {
-        const iframe = document.createElement('iframe');
-        iframe.setAttribute('src', `https://www.youtube.com/embed/${vid}?autoplay=1`);
-        iframe.setAttribute('frameborder', '0');
-        iframe.setAttribute('allowfullscreen', '1');
-        iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
-        div.innerHTML = '';
-        div.appendChild(iframe);
-      }, {once:true});
+
+      div.innerHTML = `<img src="${thumb}"><div class="play"><i class="fa fa-play"></i></div>`;
+
+      div.addEventListener("click", () => {
+        div.innerHTML = `<iframe src="https://www.youtube.com/embed/${vid}?autoplay=1"
+          frameborder="0" allowfullscreen allow="autoplay; encrypted-media"></iframe>`;
+      });
     });
-    // ---- Newsletter Ajax ----
-    document.getElementById('contactForm').onsubmit = async function(e){
+
+    // Newsletter
+    document.getElementById("contactForm").addEventListener("submit", async function (e) {
       e.preventDefault();
+
       const email = this.email.value.trim();
-      if(!email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)){
-        document.getElementById('form-message').textContent = "Please enter a valid email.";
+      const message = document.getElementById("form-message");
+
+      if (!email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
+        message.textContent = "Please enter a valid email.";
         return;
       }
-      document.getElementById('form-message').textContent = "Processing...";
+
+      message.textContent = "Processing...";
+
       const res = await fetch("https://formspree.io/f/mqkrjkwv", {
-        method:"POST",
-        headers:{'Accept':'application/json'},
-        body:JSON.stringify({email})
+        method: "POST",
+        headers: { "Accept": "application/json" },
+        body: JSON.stringify({ email })
       });
-      if(res.ok)
-        document.getElementById('form-message').textContent = "Thank you for subscribing!";
-      else
-        document.getElementById('form-message').textContent = "Submission failed. Please try again.";
+
+      message.textContent = res.ok
+        ? "Thank you for subscribing!"
+        : "Submission failed. Try again.";
+
       this.reset();
-    }
-    // ---- Smooth Scroll ----
-    document.querySelectorAll('a[href^="#"]').forEach(a=>{
-      a.addEventListener('click',e=>{
-        const href = a.getAttribute('href');
-        if(href && href[0]==='#'){
-          e.preventDefault();
-          document.querySelector(href)?.scrollIntoView({behavior:'smooth'});
-        }
-      });
     });
   </script>
+
 </body>
+
 </html>
